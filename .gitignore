@@ -1,0 +1,17 @@
+venv/
+.idea/
+__pycache__
+__pycache__/
+*.py[cod]
+venv
+*.sqlite3
+.DS_Store
+.idea
+.idea/workspace.xml
+example.log
+./shop/__pycache__/settings.cpython-37.pyc
+./shop/__pycache__/urls.cpython-37.pyc
+shop/__pycache__/urls.cpython-37.pyc
+shop/__pycache__/settings.cpython-37.pyc
+shop/vk.json
+vk.json
