@@ -1,0 +1,60 @@
+{
+    "orders": [
+        {
+            "item": "printer",
+            "quantity": "1",
+            "price": "2000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "scaner",
+            "quantity": "2",
+            "price": "1000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "computer",
+            "quantity": "3",
+            "price": "100000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "printer",
+            "quantity": "1",
+            "price": "2000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "scaner",
+            "quantity": "2",
+            "price": "1000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "computer",
+            "quantity": "3",
+            "price": "100000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "printer",
+            "quantity": "1",
+            "price": "2000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        },
+        {
+            "item": "printer",
+            "quantity": "1",
+            "price": "2000",
+            "buyer": "Ivanov I.I.",
+            "date": "07.10.2020"
+        }
+    ]
+}

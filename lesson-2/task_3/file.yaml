@@ -1,0 +1,11 @@
+key1:
+- list
+- list
+- list
+- list
+key2: 4
+key3:
+  sub_key1: 1€
+  sub_key2: 1€
+  sub_key3: 1€
+  sub_key4: 1€
