@@ -1,13 +1,17 @@
 """Программа-клиент"""
+import logging
 import sys
 import json
 import socket
 import time
+import logs.client_log_config
 
 from helper.variables import (
     ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR,
     DEFAULT_IP_ADDRESS, DEFAULT_PORT, MAX_PACKAGE_LENGTH, ENCODING
 )
+
+CLIENT_LOGGER = logging.getLogger('client_logger')
 
 
 class ClientSocket:
@@ -17,6 +21,7 @@ class ClientSocket:
         self.account_name = account_name
 
     def create_socket(self):
+        CLIENT_LOGGER.debug(f'Создаем сокет клиента')
         return socket.socket(self.inet, self.stream)
 
     def create_presence(self):
@@ -29,6 +34,7 @@ class ClientSocket:
                 ACCOUNT_NAME: self.account_name
             }
         }
+        CLIENT_LOGGER.debug(f'Сформировано {PRESENCE} сообщение для пользователя {self.account_name}')
         return out
 
     def get_message(self, client):
@@ -36,28 +42,40 @@ class ClientSocket:
          Утилита приёма и декодирования сообщения
         принимает байты выдаёт словарь, если приняточто-то другое отдаёт ошибку значения
         """
-        encoded_response = client.recv(MAX_PACKAGE_LENGTH)
-        if isinstance(encoded_response, bytes):
-            json_response = encoded_response.decode(ENCODING)
-            response = json.loads(json_response)
-            if isinstance(response, dict):
-                return response
+        CLIENT_LOGGER.debug(f'ВЫзвана функция get_message клиента')
+        try:
+            encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+            if isinstance(encoded_response, bytes):
+                json_response = encoded_response.decode(ENCODING)
+                response = json.loads(json_response)
+                if isinstance(response, dict):
+                    return response
+                raise ValueError
             raise ValueError
-        raise ValueError
+        except Exception as error:
+            CLIENT_LOGGER.error(error.args)
 
     def send_message(self, sock, message):
         # Утилита кодирования и отправки сообщения принимает словарь и отправляет его
-        js_message = json.dumps(message)
-        encoded_message = js_message.encode(ENCODING)
-        sock.send(encoded_message)
+        CLIENT_LOGGER.debug(f'Вызвана функция send_message клиента. Сообщение {message}.')
+        try:
+            js_message = json.dumps(message)
+            encoded_message = js_message.encode(ENCODING)
+            sock.send(encoded_message)
+        except Exception as error:
+            CLIENT_LOGGER.error(error.args)
 
     def process_ans(self, message):
         # Функция разбирает ответ сервера
-        if RESPONSE in message:
-            if message[RESPONSE] == 200:
-                return '200 : OK'
-            return f'400 : {message[ERROR]}'
-        raise ValueError
+        CLIENT_LOGGER.debug(f'Вызвана функция process_ans клиента. Сообщение {message}.')
+        try:
+            if RESPONSE in message:
+                if message[RESPONSE] == 200:
+                    return '200 : OK'
+                return f'400 : {message[ERROR]}'
+            raise ValueError
+        except Exception as error:
+            CLIENT_LOGGER.error(error.args)
 
 
 def main():

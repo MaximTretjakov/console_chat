@@ -1,12 +1,16 @@
 """Программа-сервер"""
+import logging
 import socket
 import sys
 import json
+import logs.server_log_config
 
 from helper.variables import (
     ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, PRESENCE,
     TIME, USER, ERROR, DEFAULT_PORT, MAX_PACKAGE_LENGTH, ENCODING
 )
+
+SERVER_LOGGER = logging.getLogger('server_logger')
 
 
 class ServerSocket:
@@ -15,6 +19,7 @@ class ServerSocket:
         self.stream = sock_stream
 
     def create_socket(self):
+        SERVER_LOGGER.debug(f'Создаем сокет на сервере')
         return socket.socket(self.inet, self.stream)
 
     def get_message(self, client):
@@ -22,20 +27,28 @@ class ServerSocket:
          Утилита приёма и декодирования сообщения
         принимает байты выдаёт словарь, если приняточто-то другое отдаёт ошибку значения
         """
-        encoded_response = client.recv(MAX_PACKAGE_LENGTH)
-        if isinstance(encoded_response, bytes):
-            json_response = encoded_response.decode(ENCODING)
-            response = json.loads(json_response)
-            if isinstance(response, dict):
-                return response
+        SERVER_LOGGER.debug(f'Вызвана функция get_message сервера')
+        try:
+            encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+            if isinstance(encoded_response, bytes):
+                json_response = encoded_response.decode(ENCODING)
+                response = json.loads(json_response)
+                if isinstance(response, dict):
+                    return response
+                raise ValueError
             raise ValueError
-        raise ValueError
+        except Exception as error:
+            SERVER_LOGGER.error(error.args)
 
     def send_message(self, sock, message):
         # Утилита кодирования и отправки сообщения принимает словарь и отправляет его
-        js_message = json.dumps(message)
-        encoded_message = js_message.encode(ENCODING)
-        sock.send(encoded_message)
+        SERVER_LOGGER.debug(f'Вызвана функция send_message сервера. Сообщение {message}')
+        try:
+            js_message = json.dumps(message)
+            encoded_message = js_message.encode(ENCODING)
+            sock.send(encoded_message)
+        except Exception as error:
+            SERVER_LOGGER.error(error.args)
 
     def process_client_message(self, message):
         """
@@ -46,6 +59,7 @@ class ServerSocket:
         if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
                 and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
             return {RESPONSE: 200}
+        SERVER_LOGGER.debug(f'Обрабатываем сообщение от клиента. Сообщение {message}')
         return {
             RESPONSE: 400,
             ERROR: 'Bad Request'

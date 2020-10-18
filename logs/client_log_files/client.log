@@ -1,0 +1,19 @@
+2020-10-19 00:41:28,535 CRITICAL client_log_config.py Критическая ошибка
+2020-10-19 00:41:28,535 ERROR client_log_config.py Ошибка
+2020-10-19 00:41:28,535 DEBUG client_log_config.py Отладочная информация
+2020-10-19 00:41:28,535 INFO client_log_config.py Информационное сообщение
+2020-10-19 00:49:31,070 DEBUG client.py Создаем сокет клиента
+2020-10-19 00:49:31,071 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2020-10-19 00:49:31,071 DEBUG client.py Вызвана функция send_message клиента. Сообщение {'action': 'presence', 'time': 1603057771.0713809, 'user': {'account_name': 'Guest'}}.
+2020-10-19 00:49:31,085 DEBUG client.py ВЫзвана функция get_message клиента
+2020-10-19 00:49:31,085 DEBUG client.py Вызвана функция process_ans клиента. Сообщение {'response': 200}.
+2020-10-19 00:54:42,466 DEBUG client.py Создаем сокет клиента
+2020-10-19 00:54:42,467 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2020-10-19 00:54:42,467 DEBUG client.py Вызвана функция send_message клиента. Сообщение {'action': 'presence', 'time': 1603058082.4673388, 'user': {'account_name': 'Guest'}}.
+2020-10-19 00:54:42,467 DEBUG client.py ВЫзвана функция get_message клиента
+2020-10-19 00:54:42,468 DEBUG client.py Вызвана функция process_ans клиента. Сообщение {'response': 200}.
+2020-10-19 00:56:21,655 DEBUG client.py Создаем сокет клиента
+2020-10-19 00:56:21,657 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2020-10-19 00:56:21,657 DEBUG client.py Вызвана функция send_message клиента. Сообщение {'action': 'presence', 'time': 1603058181.6573029, 'user': {'account_name': 'Guest'}}.
+2020-10-19 00:56:21,657 DEBUG client.py ВЫзвана функция get_message клиента
+2020-10-19 00:56:21,658 DEBUG client.py Вызвана функция process_ans клиента. Сообщение {'response': 200}.
