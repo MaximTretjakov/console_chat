@@ -1,0 +1,10 @@
+2020-10-21 21:24:38,508 DEBUG client.py Создаем сокет клиента
+2020-10-21 21:24:38,524 DEBUG decos.py <2020-10-21 21:24:38> Функция create_socket() вызвана из функции main.
+2020-10-21 21:24:38,524 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2020-10-21 21:24:38,525 DEBUG decos.py <2020-10-21 21:24:38> Функция create_presence() вызвана из функции main.
+2020-10-21 21:24:38,525 DEBUG client.py Вызвана функция send_message клиента. Сообщение {'action': 'presence', 'time': 1603304678.5249765, 'user': {'account_name': 'Guest'}}.
+2020-10-21 21:24:38,525 DEBUG decos.py <2020-10-21 21:24:38> Функция send_message() вызвана из функции main.
+2020-10-21 21:24:38,526 DEBUG client.py ВЫзвана функция get_message клиента
+2020-10-21 21:24:38,527 DEBUG decos.py <2020-10-21 21:24:38> Функция get_message() вызвана из функции main.
+2020-10-21 21:24:38,527 DEBUG client.py Вызвана функция process_ans клиента. Сообщение {'response': 200}.
+2020-10-21 21:24:38,527 DEBUG decos.py <2020-10-21 21:24:38> Функция process_ans() вызвана из функции main.
