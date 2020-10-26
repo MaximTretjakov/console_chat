@@ -1,0 +1,69 @@
+2020-10-26 20:38:11,380 DEBUG server.py Создаем сокет на сервере
+2020-10-26 20:38:11,395 DEBUG decos.py <2020-10-26 20:38:11> Функция create_socket() вызвана из функции main.
+2020-10-26 20:38:11,395 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64530)
+2020-10-26 20:38:11,427 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64531)
+2020-10-26 20:38:11,427 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:11,442 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.395915, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:11,442 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:11,442 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64532)
+2020-10-26 20:38:11,442 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:11,442 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.4271631, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:11,442 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:11,442 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:11,442 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.4427872, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:11,442 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:11,442 DEBUG decos.py <2020-10-26 20:38:11> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:11,864 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64527)
+2020-10-26 20:38:11,864 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:11,864 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.8646343, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:11,864 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:11,864 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64526)
+2020-10-26 20:38:11,864 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:11,864 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.8646343, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:11,864 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:11,864 DEBUG decos.py <2020-10-26 20:38:11> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:11,880 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64529)
+2020-10-26 20:38:11,880 INFO server.py Установлено соедение с ПК ('127.0.0.1', 64528)
+2020-10-26 20:38:12,395 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:12,395 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.8802576, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:12,395 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:12,395 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:12,395 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1603733891.8802576, 'user': {'account_name': 'Guest'}}
+2020-10-26 20:38:12,395 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'response': 200}
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция send_message() вызвана из функции process_client_message.
+2020-10-26 20:38:12,395 DEBUG decos.py <2020-10-26 20:38:12> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:55,551 DEBUG server.py Вызвана функция get_message сервера
+2020-10-26 20:38:55,551 DEBUG decos.py <2020-10-26 20:38:55> Функция get_message() вызвана из функции main.
+2020-10-26 20:38:55,551 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1603733935.4424295, 'account_name': 'Guest', 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,551 DEBUG decos.py <2020-10-26 20:38:55> Функция process_client_message() вызвана из функции main.
+2020-10-26 20:38:55,551 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,551 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,551 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,551 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,551 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,567 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,567 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,567 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,567 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,567 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,567 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,567 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
+2020-10-26 20:38:55,567 DEBUG server.py Вызвана функция send_message сервера. Сообщение {'action': 'message', 'sender': 'Guest', 'time': 1603733935.551797, 'mess_text': 'Test from first client.'}
+2020-10-26 20:38:55,567 DEBUG decos.py <2020-10-26 20:38:55> Функция send_message() вызвана из функции main.
